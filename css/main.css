@@ -1,0 +1,67 @@
+
+/*base */
+html, body {
+	font-size: 16px;
+	font-family: arial;
+	margin: 0px !important;
+
+}
+
+.backgroundchicken {
+	background-image: url(assets/chickens.jpg);
+	height: 100vh;
+	background-size: cover;
+	position: relative;
+}
+
+.about {
+	display: none;
+}
+
+.welcomectn {
+	top: 30%;
+	left: 30%;
+	max-width: 1000px;
+	position: absolute;
+	
+	color: white;
+}
+.name {
+	font-size: 100px;
+}
+.squel {
+	font-size: 80px;
+}
+.contactbtn {
+	padding: 20px;
+	font-size: 50px;
+	border-radius: 4px;
+	background-color: rgb(247, 37, 36);
+	font-family: inherit;
+	border:0;
+	text-decoration: none;
+}
+.aboutbtn {
+	display: inline-block;
+	font-size: 50px;
+	padding: 20px;
+	margin-left: 10px;
+}
+
+/*mobi le - ipad */
+@media  screen and (max-width: 480px) {
+    body {
+    	font-size: 20px;
+    }
+}
+
+/*tabl et - desktop */
+@media  screen and (max-width: 760px) {
+    
+}
+
+/*desk top+ */
+
+@media  screen and (max-width: 1020px) {
+    
+}
