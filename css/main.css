@@ -1,21 +1,99 @@
 
 /*base */
 
-
+body {
+	margin: 0;
+	
+}
+a {
+	text-decoration: none;
+	color: black;
+}
 .backgroundchicken {
 	background-image: url(assets/chickens.jpg);
 	height: 100vh;
 	background-size: cover;
 	position: relative;
+	overflow: auto;
 
 	
 }
 
-.about {
-	display: none;
+/*about page styles*/
+
+header {
+	width: 100%;
+	height: 100px; 	
+}
+.backbutton {
+	display: inline-block;
+	font-size: 30px;
+	background: yellow;
+	padding: 10px;
+	float: left;	
+}
+#abouttitle {
+	font-size: 40px;
+	padding: 10px;
+	
+	left: 35%;
+	position: relative;
 }
 
 
+
+.about {
+	position: absolute;
+	width: 95%;
+	font-size: 16px;
+	line-height: 1.5em;
+
+}
+
+
+
+.description {
+	width: 45%;
+	float: left;
+	font-size: 20px;
+	background-color: white;
+	border-radius: 10px;
+}
+.description p {
+
+	padding: 20px;
+	font-size: 20px;
+	margin: 0;
+}
+
+
+
+.skillslist {
+	width: 45%;
+	float: left;
+	margin: 0;
+	border-radius: 10px;
+	background-color: white;
+
+	
+}
+.skillslist li {
+	
+	list-style: none;
+	padding: 20px;
+	font-size: 20px;
+	
+}
+h3 {
+	
+	font-size: 175%;
+	font-weight: 500;
+	margin: 0;
+	padding:0px 5px 10px 0px;
+}
+
+
+/*Main page styles*/
 
 .welcomectn {
 	top: 40%;
@@ -24,19 +102,20 @@
 	position: absolute;
 	font-family: arial;
 	color: white;
+	overflow: none;
 }
 .name {
-	font-size: 100px;
+	font-size: 80px;
 	padding: 20px 20px 20px 0;
 }
 .squel {
-	font-size: 80px;
+	font-size: 60px;
 	padding: 20px 20px 20px 0;
 	margin-bottom: 20px;
 }
 .contactbtn {
 	padding: 20px;
-	font-size: 50px;
+	font-size: 30px;
 	border-radius: 10px;
 	background-color: rgb(247, 37, 36);
 	font-family: inherit;
@@ -45,7 +124,7 @@
 }
 .aboutbtn {
 	display: inline-block;
-	font-size: 50px;
+	font-size: 30px;
 	padding: 20px;
 	margin-left: 10px;
 }
@@ -56,31 +135,62 @@
 
 
 
-/*mobile - ipad */
+/*mobile - 480 and below */
 @media (max-width: 480px) {
    .welcomectn {
    	left: 10%;
-   }
-  
-}
-
-/*tabl et - desktop */
-@media (max-width: 760px) {
-     .welcomectn {
-   	left: 10%;
-   }
-/*   .name {
-     font-size: 60px
+   } 
+   .name {
+   	font-size: 100px;
    }
    .squel {
-
+   	font-size: 80px
    }
    .contactbtn {
+   	font-size: 50px;
+   }
+   .aboutbtn {
+   	font-size: 50px;
+   }
+}
 
+@media (max-width: 480px ) and (orientation:landscape) {
+	.welcomectn {
+		top: 20%;
+	}
+}
+
+/*tabl et - 760 and below */
+@media (max-width: 760px) {
+    .welcomectn {
+   	left: 10%;
+   	top: 20%;
+   }
+.name {
+     font-size: 60px;
+   }
+   .squel {
+   	 font-size: 40px;
+   }
+   .contactbtn {
+   	 font-size: 20px;
    }
    .aboutbtn {
    	
-   }*/
+   }
 }
-
+@media (max-width: 1600px) {
+	.name {
+     font-size: 100px;
+   }
+   .squel {
+   	 font-size: 70px;
+   }
+   .contactbtn {
+   	 font-size: 40px;
+   }
+   .aboutbtn {
+   	 font-size: 40px;
+   }
+}
 
