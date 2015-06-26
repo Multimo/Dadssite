@@ -3,14 +3,19 @@
 
 body {
 	margin: 0;
-	
+	font-family: 'Roboto', sans-serif;
 }
 a {
 	text-decoration: none;
 	color: black;
 }
+h1, h2, h3 {
+	font-family: 'Slabo 27px', serif;
+}
+
+
 .backgroundchicken {
-	background-image: url(assets/chickens.jpg);
+	background-image: url(assets/chickens2.jpg);
 	height: 100vh;
 	background-size: cover;
 	position: relative;
@@ -19,115 +24,144 @@ a {
 	
 }
 
-/*about page styles*/
-
-header {
-	width: 100%;
-	height: 100px; 	
-}
-.backbutton {
-	display: inline-block;
-	font-size: 30px;
-	background: yellow;
-	padding: 10px;
-	float: left;	
-}
-#abouttitle {
-	font-size: 40px;
-	padding: 10px;
-	
-	left: 35%;
-	position: relative;
-}
-
-
-
-.about {
-	position: absolute;
-	width: 95%;
-	font-size: 16px;
-	line-height: 1.5em;
-
-}
-
-
-
-.description {
-	width: 45%;
-	float: left;
-	font-size: 20px;
-	background-color: white;
-	border-radius: 10px;
-}
-.description p {
-
-	padding: 20px;
-	font-size: 20px;
-	margin: 0;
-}
-
-
-
-.skillslist {
-	width: 45%;
-	float: left;
-	margin: 0;
-	border-radius: 10px;
-	background-color: white;
-
-	
-}
-.skillslist li {
-	
-	list-style: none;
-	padding: 20px;
-	font-size: 20px;
-	
-}
-h3 {
-	
-	font-size: 175%;
-	font-weight: 500;
-	margin: 0;
-	padding:0px 5px 10px 0px;
-}
 
 
 /*Main page styles*/
 
+.topbar {
+	background: rgba(29,29,29,0.43);
+	
+}
+.topbar ul {
+	padding: 0;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.topbar ul li {
+	padding: 10px 0px;
+	color: white;
+	list-style: none;
+	width: 33%;
+	opacity: 1;
+	text-align: center;
+
+}
+
+
+
 .welcomectn {
-	top: 40%;
+	top: 30%;
 	left: 30%;
 	max-width: 800px;
 	position: absolute;
-	font-family: arial;
+	
 	color: white;
 	overflow: none;
+}
+.titlebox {
+	background-color: rgba(29, 29, 29, 0.3);
+	border-radius: 10px;
+	margin-bottom: 20px;
+	padding: 20px;
 }
 .name {
 	font-size: 80px;
 	padding: 20px 20px 20px 0;
+	margin: 0;
+	
 }
 .squel {
 	font-size: 60px;
 	padding: 20px 20px 20px 0;
 	margin-bottom: 20px;
+	margin: 0;
+	
 }
 .contactbtn {
 	padding: 20px;
 	font-size: 30px;
 	border-radius: 10px;
-	background-color: rgb(247, 37, 36);
+	background-color: rgba(247, 37, 36,0.7);
 	font-family: inherit;
 	border:0;
 	text-decoration: none;
+}
+.contactbtn:hover {
+	opacity: 1; 
 }
 .aboutbtn {
 	display: inline-block;
 	font-size: 30px;
 	padding: 20px;
 	margin-left: 10px;
+	background-color: rgba(29, 29, 29, 0.3);
+	border-radius: 10px;
 }
+.servicebtn {
+	display: inline-block;
+	font-size: 30px;
+	padding: 20px;
+	margin-left: 10px;
+	background-color: rgba(29, 29, 29, 0.3);
+	border-radius: 10px;
+	border: none;
+}
+
+
+
+
+
+
+.overlay {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(29, 29, 29, .7);
+	
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+.formbox {
+	background-color: white;
+	border-radius: 10px;
+	border: 1px solid #000;
+	max-width: 600px;
+	padding: 30px;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+form input {
+	padding: 5px;
+	font-size: 20px;
+	margin: 20px;
+}
+.msgbox {
+	height: 100px;
+	width: 85%;
+}
+.submitbtn {
+
+}
+
+
+
+
+
+
 
 
 
@@ -180,6 +214,9 @@ h3 {
    }
 }
 @media (max-width: 1600px) {
+	.welcomectn {
+		top: 25%;
+	}
 	.name {
      font-size: 100px;
    }
@@ -190,6 +227,9 @@ h3 {
    	 font-size: 40px;
    }
    .aboutbtn {
+   	 font-size: 40px;
+   }
+   .servicebtn {
    	 font-size: 40px;
    }
 }
