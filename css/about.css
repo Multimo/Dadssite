@@ -3,10 +3,12 @@ body {
 	font-family: 'Roboto', sans-serif;
 	letter-spacing: 2px;
 	line-height: 1.5em;
+	
+
 }
 a {
 	text-decoration: none;
-	color: black;
+	color: white;
 }
 h1, h2, h3 {
 	font-family: 'Slabo 27px', serif;
@@ -14,7 +16,7 @@ h1, h2, h3 {
 
 
 .backgroundchicken {
-	background-image: url(assets/chickens.jpg);
+	background-image: url(assets/Outside2.jpg);
 	height: 100vh;
 	background-size: cover;
 	position: relative;
@@ -23,14 +25,26 @@ h1, h2, h3 {
 }
 
 
+ html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+
 
 
 /*about page styles*/
 
 header {
-	width: 100%;
-	height: 100px; 	
+	width: 95%;
+	height: 100px;
+	background-color: ghostwhite;
+  	
+  	margin: 0 auto;
+  	min-width: 320px;	
 
+
+	
 	display: flex !important;
 	flex-direction: row;
 	justify-content: center;
@@ -39,7 +53,8 @@ header {
 .backbutton {
 	width: 30%;
 	font-size: 30px;
-	background: yellow;
+	color: white;
+	background-color: rgba(247, 37, 36,0.5);
 	padding: 10px;
 	
 }
@@ -52,9 +67,10 @@ header {
 
 }
 .forwardbutton {
+	color: white;
 	width: 30%;
 	font-size: 30px;
-	background: yellow;
+	background-color: rgba(247, 37, 36,0.5);
 	padding: 10px;
 	text-align: right;
 
@@ -64,80 +80,44 @@ header {
 
 .about {
 	
-	width: 95%;
-	margin: 0 auto;
+	min-width: 320px;
 	font-size: 16px;
 	line-height: 1.5em;
+
+	background-color: ghostwhite;
+  	width: 95%;
+  	margin: 0 auto;
+	padding-bottom: 20px;
 	
+	color: black;
 	display: flex;
 	flex-direction: row;
-	justify-content: ;
+	justify-content: center;
+	align-items: center;
 }
 
 .description {
 	width: 100%;
 	font-size: 20px;
-	background-color: white;
+
 	border-radius: 10px;
+
 }
 .description p {
 
 	padding: 20px;
 	font-size: 20px;
 	margin: 0;
+	text-align: justify;
 }
-
-
-
-
-
-
-
-.services {
-	width: 95%;
-	margin: 0 auto;
-	font-size: 16px;
-	line-height: 1.5em;
-	display: flex;
-	
-}
-
-.skillslist {
-	padding: 20px;
+.aboutimg {
+	max-width: 500px;
+	min-width: 320px;
 	width: 100%;
-	margin: 0;
-	border-radius: 10px;
-	background-color: white;
-	
+	border-radius: 20px;
+	max-height: 350px;
+	margin-left: 20px;
 }
-
-.skillimgbox {
-	display: flex;
-}
-
-.skilltext{
-	width: 60%;
-}
- h2	 {
-	padding: 20px;
-}
-p {
-	
-	padding: 20px;
-	font-size: 20px;
-}
-
-
-img {
-	max-width: 300px;
-	max-height: 300px;
-	width: 100%;
-	height: 100%;
-
-	padding: 20px;
-	
-}
-
 
 
 
@@ -149,9 +129,10 @@ img {
 /*contact bar at bottom of page*/
 
 .bottombar {
-	background: rgb(29,29,29);
+	background-color: rgba(29,29,29, .7);
 	width: 100%;
 	display: flex;
+	color: white;
 	
 	flex-direction: row;
 	justify-content: space-around;
@@ -169,10 +150,53 @@ img {
 }
  .bottombar ul li {
 	padding: 10px 0px;
-	color: white;
+	
 	list-style: none;
 	width: 33%;
 	opacity: 1;
 	text-align: center;
+
+}
+
+
+@media screen and (max-width: 500px) {
+	span {
+		align-self: flex-start;
+	}
+	#abouttitle {
+		align-self: flex-end;
+		position: relative;
+		top: 30px;
+		left: -15px;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.aboutimg {
+		margin-top: 20px;
+	}
+	.about {
+		flex-direction: column;
+	}
+
+
+
+	.bottombar ul {
+   	flex-direction: column;
+   	align-items: center;
+	}
+	.bottombar ul li {
+		width: 100%;
+	}
+}
+
+/*@media screen and (min-width: 661px) and (max-width: 1399px) {
+
+}*/
+/* for screens bigger than 1400 px*/
+@media	screen and (min-width: 1240px) {
+	.header {
+		max-width: 1100px;
+	}
 
 }

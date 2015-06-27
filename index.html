@@ -5,6 +5,7 @@
 <head>
   
     <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Kerry Mulqueen -  International Poultry Consultant </title>
     <link rel="stylesheet"  href="css/main.css"> 
     <link rel="stylesheet"  href="css/normalize.css">
@@ -18,7 +19,7 @@
 
             <div class="topbar">
                 <ul>
-                    <li> Email: Kerry.mulqueen@hotmail.com</li>
+                    <li> Kerry.mulqueen@hotmail.com</li>
                     <li>Ph: 021 123 4567</li>
                     <li>Linkedin</li>
 
@@ -35,11 +36,11 @@
                 <button class="contactbtn">
                     Get in Touch 
                 </button>
-                <div class="aboutbtn"> 
-                     About
-                </div> 
-                <button class="servicebtn">
-                    Services     
+                <button class="pagebtn"> 
+                     <a href="about.html"> About </a>
+                </button> 
+                <button class="pagebtn">
+                   <a href="services.html"> Services </a>    
                 </button> <!-- main feature elements end here -->
              </div> 
 
@@ -47,13 +48,28 @@
             
             <div class="formbox">
                 <span class="closebtn">Close</span>
+                
+                <div class="formheader">
+                    <h2>
+                        Send me an Email!
+                        <hr>
+                    </h2>    
+                </div>   
                 <form>
-                    <input type="text" name="Name" placeholder="Enter your Name here!">
-                    <input type="text" name="Email" placeholder="Enter your Email here!">
+                    <div class="formtextbox">
+                        <span class="formnames">Name: </span><input type="text" name="Name" placeholder="Enter your Name here!">
+                    </div>
 
-                    <textarea class="msgbox" > </textarea>
+                    <div class="formtextbox">
+                        <span class="formnames">Email: </span><input type="text" name="Email" placeholder="Enter your Email here!">
+                    </div>
+                    <div class="formtextbox">
+                        <textarea name="textarea" class="msgbox" rows="10" cols="50" placeholder="Write your message here!"> </textarea>
+                    </div>
+                </form>
+                 <div class="formfooter">
                     <input class="submitbtn" type="submit" name="Submit">
-                </form>  
+                </div>  
             </div>
         </div>  
 
