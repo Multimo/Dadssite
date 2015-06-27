@@ -4,6 +4,7 @@
 body {
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
+	letter-spacing: 2px;
 }
 a {
 	text-decoration: none;
@@ -15,7 +16,7 @@ h1, h2, h3 {
 
 
 .backgroundchicken {
-	background-image: url(assets/chickens2.jpg);
+	background-image: url(assets/CloseUp1.jpg);
 	height: 100vh;
 	background-size: cover;
 	position: relative;
@@ -64,12 +65,13 @@ h1, h2, h3 {
 	background-color: rgba(29, 29, 29, 0.3);
 	border-radius: 10px;
 	margin-bottom: 20px;
-	padding: 20px;
+	padding-left: 20px;
 }
 .name {
 	font-size: 80px;
 	padding: 20px 20px 20px 0;
 	margin: 0;
+
 	
 }
 .squel {
@@ -84,9 +86,10 @@ h1, h2, h3 {
 	font-size: 30px;
 	border-radius: 10px;
 	background-color: rgba(247, 37, 36,0.7);
-	font-family: inherit;
+	
 	border:0;
 	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
 }
 .contactbtn:hover {
 	opacity: 1; 
@@ -98,6 +101,7 @@ h1, h2, h3 {
 	margin-left: 10px;
 	background-color: rgba(29, 29, 29, 0.3);
 	border-radius: 10px;
+	font-family: 'Roboto', sans-serif;
 }
 .servicebtn {
 	display: inline-block;
@@ -107,10 +111,15 @@ h1, h2, h3 {
 	background-color: rgba(29, 29, 29, 0.3);
 	border-radius: 10px;
 	border: none;
+	font-family: 'Roboto', sans-serif;
 }
 
-
-
+.show {
+	display: flex !important;
+}
+.closebtn {
+	cursor: pointer;
+}
 
 
 
@@ -122,7 +131,7 @@ h1, h2, h3 {
 	left: 0px;
 	height: 100%;
 	width: 100%;
-	background-color: rgba(29, 29, 29, .7);
+	background-color: rgba(29, 29, 29, .5);
 	
 
 	display: flex;
@@ -137,6 +146,8 @@ h1, h2, h3 {
 	border: 1px solid #000;
 	max-width: 600px;
 	padding: 30px;
+	width: 500px;
+	height: 500px;
 }
 form {
 	display: flex;
@@ -154,7 +165,7 @@ form input {
 	width: 85%;
 }
 .submitbtn {
-
+	width: 100%;
 }
 
 
