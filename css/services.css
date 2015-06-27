@@ -1,0 +1,246 @@
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 2px;
+	line-height: 1.5em;
+	background-color: #F3F4F2;
+	
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+h1, h2, h3 {
+	font-family: 'Slabo 27px', serif;
+}
+
+
+.backgroundchicken {
+	background-image: url(assets/Outside2.jpg);
+	height: 100vh;
+	background-size: cover;
+	position: relative;
+	overflow: auto;
+
+}
+
+/*about page styles*/
+
+header {
+	
+	height: 100px; 	
+	min-width: 380px;
+
+	background-color: ghostwhite;
+  	width: 95%;
+  	margin: 0 auto;
+
+	display: flex !important;
+	flex-direction: row;
+	justify-content: center;
+	align-items:center; 
+}
+.backbutton {
+	width: 30%;
+	font-size: 30px;
+	background-color: rgba(247, 37, 36,0.7);
+	padding: 10px;
+	
+}
+#abouttitle {
+	font-size: 40px;
+	padding: 10px;
+	width: 30%;
+	text-align: center;
+
+
+}
+.forwardbutton {
+	width: 30%;
+	font-size: 30px;
+	background-color: rgba(247, 37, 36,0.7);
+	padding: 10px;
+	text-align: right;
+
+}
+
+
+.services {
+	width: 95%;
+	margin: 0 auto;
+	font-size: 16px;
+	line-height: 1.5em;
+	display: flex;
+	background-color: ghostwhite;
+
+	
+}
+
+.skillslist {
+	padding: 20px;
+	width: 100%;
+	margin: 0;
+	border-radius: 10px;
+		
+	
+}
+
+.skillimgbox {
+	display: flex;
+	color: black;
+	
+	margin: 35px 0px;
+	align-items: center;
+	border-radius: 10px;
+}
+
+.skilltext{
+	width: 60%;
+	margin: 0 auto;
+	padding: 0px 25px;
+}	
+ h2	 {
+	padding: 20px;
+	text-align: start;
+	margin-bottom: 0;
+
+}
+.skillslist .skillimgbox .skilltext:nth-child(2n) h2 {
+	text-align: end;
+}
+
+p {
+	text-align: justify;
+	padding: 20px;
+	font-size: 20px;
+	letter-spacing: 1px;
+	margin-top: 0;
+}
+
+
+
+.serviceimg {
+	
+	
+	width: 40%;
+
+
+	margin: 0 auto;
+
+	border-radius: 5px;
+	
+}
+
+
+
+
+
+
+
+
+
+/*contact bar at bottom of page*/
+
+.bottombar {
+	background: rgba(29,29,29, .5);
+	width: 100%;
+	display: flex;
+	
+	flex-direction: row;
+	justify-content: space-around;
+}
+ .bottombar ul {
+	padding: 0;
+	margin-top: 10px;
+	width: 100%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	
+	
+}
+ .bottombar ul li {
+	padding: 10px 0px;
+	color: white;
+	list-style: none;
+	width: 33%;
+	opacity: 1;
+	text-align: center;
+
+}
+/*
+for screens 660px in width and below*/
+@media screen and (max-width: 520px) {
+	span {
+		align-self: flex-start;
+	}
+	#abouttitle {
+		align-self: flex-end;
+		position: relative;
+		top: 30px;
+		left: -15px;
+	}
+
+}
+
+@media screen and (max-width: 720px) {
+
+
+	.skillslist {
+		min-width: 320px;
+	}
+	.skillimgbox {
+		flex-direction: column;
+	}
+	.serviceimg {
+		width: 100%;
+		min-width: 320px;
+		margin: 10px ;
+		order: 1;
+		max-height: 500px;
+		margin-bottom: 0;
+	}
+	.skilltext {
+		width: 100%;
+		padding: 0;
+	}
+	h2 {
+		text-align: center !important;
+	}
+
+
+
+	.bottombar ul {
+   	flex-direction: column;
+   	align-items: center;
+	}
+	.bottombar ul li {
+		width: 100%;
+	}
+}
+
+/*@media screen and (min-width: 661px) and (max-width: 1399px) {
+
+}*/
+/* for screens bigger than 1400 px*/
+@media	screen and (min-width: 1240px) {
+	.skillslist {
+		padding-left: 0;
+	}
+	.skillimgbox {
+		max-width: 1400px;
+		margin: 10px auto;
+	}
+	#abouttitle {
+		font-size: 60px;
+	}
+	h2 {
+		font-size: 30px;
+	}
+	p {
+		font-size:20px;
+		line-height: 1.5em;
+	}
+
+}

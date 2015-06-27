@@ -8,7 +8,7 @@ body {
 }
 a {
 	text-decoration: none;
-	color: black;
+	color: white;
 }
 h1, h2, h3 {
 	font-family: 'Slabo 27px', serif;
@@ -39,6 +39,7 @@ h1, h2, h3 {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 .topbar ul li {
 	padding: 10px 0px;
@@ -48,13 +49,14 @@ h1, h2, h3 {
 	opacity: 1;
 	text-align: center;
 
+
 }
 
 
 
 .welcomectn {
 	top: 30%;
-	left: 30%;
+	left: 20%;
 	max-width: 800px;
 	position: absolute;
 	
@@ -94,32 +96,20 @@ h1, h2, h3 {
 .contactbtn:hover {
 	opacity: 1; 
 }
-.aboutbtn {
+.pagebtn {
 	display: inline-block;
-	font-size: 30px;
+	border:none;
 	padding: 20px;
 	margin-left: 10px;
 	background-color: rgba(29, 29, 29, 0.3);
 	border-radius: 10px;
-	font-family: 'Roboto', sans-serif;
-}
-.servicebtn {
-	display: inline-block;
-	font-size: 30px;
-	padding: 20px;
-	margin-left: 10px;
-	background-color: rgba(29, 29, 29, 0.3);
-	border-radius: 10px;
-	border: none;
 	font-family: 'Roboto', sans-serif;
 }
 
 .show {
 	display: flex !important;
 }
-.closebtn {
-	cursor: pointer;
-}
+
 
 
 
@@ -143,29 +133,63 @@ h1, h2, h3 {
 .formbox {
 	background-color: white;
 	border-radius: 10px;
-	border: 1px solid #000;
+	background-color: #F3F4F2;
 	max-width: 600px;
-	padding: 30px;
-	width: 500px;
-	height: 500px;
+	width: 600px;
+}
+
+.closebtn {
+	cursor: pointer;
+	float: right;
+	position: relative;
+	top: 5px;
+	right: 10px;
+}
+
+
+.formheader{
+	width: 100%;
+	height: 45px;
+	text-align: center;
 }
 form {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+.formtextbox {
+	padding: 20px;
+}
+.formnames {
+	padding-left: 10px;
 }
 form input {
 	padding: 5px;
-	font-size: 20px;
-	margin: 20px;
+	float: right;
+	border: 2px solid #dadada;
+	font-size: 16px;
+	width: 250px;
+	background-color: ghostwhite;
+	
 }
 .msgbox {
-	height: 100px;
-	width: 85%;
+	height: 200px;
+	width: 99%;
+	margin: 10px 0px;
+	border: 2px solid #dadada;
+	resize: none;
+	background-color: ghostwhite;
+}
+.formfooter {
+	width: 100%;
+
 }
 .submitbtn {
-	width: 100%;
+	float: right;
+	padding: 20px;
+	border: none;
+	background-color: rgba(29, 29, 29, 0.3);
+	border-radius: 10px;
+	margin: 10px;
 }
 
 
@@ -181,67 +205,75 @@ form input {
 
 
 /*mobile - 480 and below */
-@media (max-width: 480px) {
+@media screen and (max-width: 660px) {
+   .topbar ul {
+   	flex-direction: column;
+   	align-items: center;
+	}
+	.topbar ul li {
+		width: 100%;
+	}
    .welcomectn {
-   	left: 10%;
+   	left: 5%;
    } 
    .name {
-   	font-size: 100px;
+   	font-size: 40px;
    }
    .squel {
-   	font-size: 80px
+   	font-size: 25px
    }
    .contactbtn {
-   	font-size: 50px;
+   	font-size: 16px;
    }
-   .aboutbtn {
-   	font-size: 50px;
+   .pagebtn {
+   	font-size: 16px;
    }
+
+
+
 }
 
-@media (max-width: 480px ) and (orientation:landscape) {
-	.welcomectn {
-		top: 20%;
-	}
-}
 
 /*tabl et - 760 and below */
-@media (max-width: 760px) {
-    .welcomectn {
+@media screen and (min-width: 661px) and (max-width: 960px) {
+   .topbar ul li {
+   	padding: 10px;
+   }
+   .welcomectn {
    	left: 10%;
    	top: 20%;
    }
-.name {
-     font-size: 60px;
+	.name {
+     font-size: 80px;
+
    }
    .squel {
-   	 font-size: 40px;
+   	 font-size: 60px;
    }
    .contactbtn {
-   	 font-size: 20px;
+   	 font-size: 40px;
    }
-   .aboutbtn {
-   	
+   .pagebtn {
+   	 font-size: 40px;
+   	 margin-top: 10px;
    }
 }
-@media (max-width: 1600px) {
+@media screen and (min-width: 961px) {
 	.welcomectn {
 		top: 25%;
 	}
 	.name {
-     font-size: 100px;
+     font-size: 80px;
    }
    .squel {
-   	 font-size: 70px;
+   	 font-size: 60px;
    }
    .contactbtn {
-   	 font-size: 40px;
+   	 font-size: 30px;
    }
-   .aboutbtn {
-   	 font-size: 40px;
+   .pagebtn {
+   	 font-size: 30px;
    }
-   .servicebtn {
-   	 font-size: 40px;
-   }
+ 
 }
 
